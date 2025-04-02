@@ -6,7 +6,7 @@ ENV PORT=80 \
     SSL_PORT=443
 
 # Expose ports
-EXPOSE 80 443
+EXPOSE 81 443
 
 # Copy files to the appropriate directories
 COPY ./ /app
