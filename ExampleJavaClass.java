@@ -28,15 +28,15 @@ public class ExampleJavaClass {
     }
     
     // The main method to test the functions
-    public static void main(String[] args) {
+    public static String main(String[] args) {
         System.out.println(getGreeting("Alice"));
         System.out.println("Sum of 5 and 3: " + addNumbers(5, 3));
-        System.out.println("Is 10 even? " + isEven(10));
+        return "Is 10 even? " + isEven(10);
 
-        Book book = new Book("1984", "George Orwell");
-        EBook ebook = new EBook("Brave New World", "Aldous Huxley", 1.5);
+       // Book book = new Book("1984", "George Orwell");
+       // EBook ebook = new EBook("Brave New World", "Aldous Huxley", 1.5);
         
-        book.displayInfo();
-        ebook.displayInfo();
+       // book.displayInfo();
+       // ebook.displayInfo();
     }
 }
