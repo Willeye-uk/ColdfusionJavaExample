@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  cfmljava:
+    image: ortussolutions/commandbox
+    environment:
+      - PORT=80
+      - SSL_PORT=443
+    ports:
+      - "81:80"
+      - "443:443"
+    volumes:
+      - ./:/app
+    working_dir: /app
